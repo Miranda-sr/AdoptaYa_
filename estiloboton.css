@@ -1,0 +1,116 @@
+.publicar-container {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.publicar-container h2 {
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+.publicar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.publicar-form label {
+    font-weight: bold;
+    text-align: left;
+    color: #444;
+}
+
+.publicar-form input,
+.publicar-form select,
+.publicar-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.publicar-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.publicar-form button {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.publicar-form button:hover {
+    background: #1e8f4d;
+}
+.publicar-container{
+            font-size: 20px;
+}
+:root{
+  --bg:#f7f7fb;
+  --accent:#ff6b6b;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:2rem 0;
+}
+.site-header{
+  background:linear-gradient(90deg, #ffffffcc, #ffffffcc);
+  border-bottom:1px solid #e6e9ef;
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(4px);
+  z-index:50;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1rem 0;
+}
+.logo{
+  font-weight:700;
+  font-size:1.2rem;
+  color:#111827;
+  text-decoration:none;
+}
+.logo .dot{color:var(--accent)}
+.nav a{margin-left:1rem; text-decoration:none; color:var(--muted)}
+.button{
+  margin-left:1rem;
+  padding:0.5rem 0.9rem;
+  border-radius:8px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+/*Hero*/
+.hero{
+  padding:3rem 0;
+}

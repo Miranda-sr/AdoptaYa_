@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Mascota - AdoptaYA</title>
+    <link rel="stylesheet" href="estiloboton.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">AdoptaYa<span class="dot">.</span></a>
+      <nav class="nav">
+        <a href="animales.html">Animales</a>
+        <a href="ayuda.html">Cómo ayudar</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="button" href="publica.html">Publicar mascota</a>
+      </nav>
+    </div>
+  </header>
+    <section class="publicar-container">
+        <h2>Comparte una mascota para adopción</h2>
+        <form class="publicar-form">
+            <label for="nombre">Nombre de la mascota:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Luna, Max" required>
+            <label for="tipo">Tipo de animal:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecciona...</option>
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Otro</option>
+            </select>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" placeholder="Ej. 2 años" required>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Describe su personalidad, cuidados, etc." required></textarea>
+            <label for="imagen">Foto de la mascota:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            <button type="submit">Publicar Mascota</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 AdoptaYA | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
