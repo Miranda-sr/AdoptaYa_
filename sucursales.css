@@ -1,0 +1,182 @@
+/* Encabezado igual al de la página principal */
+:root {
+  --bg: #f7f7fb;
+  --accent: #ff6b6b;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --container: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  color: #111827;
+}
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:2rem 0;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #ffffffcc, #ffffffcc);
+  border-bottom: 1px solid #e6e9ef;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  z-index: 50;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #111827;
+  text-decoration: none;
+}
+.logo .dot {
+  color: var(--accent);
+}
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: var(--accent);
+}
+.button {
+  margin-left: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Hero de sucursales */
+.hero-sucursales {
+  background: linear-gradient(135deg, #ff7b7b, #ff5252);
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem 7rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 25px rgba(255, 90, 90, 0.25);
+}
+
+.hero-sucursales::before {
+  content: "🐾";
+  font-size: 12rem;
+  opacity: 0.08;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.hero-sucursales h1 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-sucursales p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Sección de sucursales */
+.sucursales-container {
+  max-width: var(--container);
+  margin: -3rem auto 4rem;
+  padding: 2rem;
+}
+
+.sucursal-card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.sucursal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.sucursal-card h2 {
+  font-size: 1.6rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.sucursal-card p {
+  color: var(--muted);
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+
+/* Mapa */
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e6e9ef;
+  background: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.site-footer p {
+  color: var(--muted);
+  margin: 0.3rem 0;
+}
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-sucursales h1 {
+    font-size: 2.1rem;
+  }
+  .sucursal-card {
+    padding: 1.5rem;
+  }
+}
